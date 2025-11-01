@@ -1,4 +1,6 @@
-﻿namespace ImcApp.Models;
+﻿using ImcApp.Models;
+
+namespace ImcApp;
 //para armazenar os outputs no browser, esta é uma das formas
 public static class AppState
 {

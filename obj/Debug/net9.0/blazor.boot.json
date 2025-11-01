@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ImcApp",
   "resources": {
-    "hash": "sha256-Gjl2ytd8TRZ1P55rsIfxGPWtl1KcSUUSRVwLpftJ7+g=",
+    "hash": "sha256-8a8ean0UdcRwabrFbKe86MY1EOwwTqHE+IFC7b022FA=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "Microsoft.AspNetCore.Authorization.50odlujk1g.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -202,8 +202,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "ImcApp.gzaquohc8m.wasm": "ImcApp.wasm",
-      "ImcApp.inj0franir.pdb": "ImcApp.pdb"
+      "ImcApp.u3gfqfjwp1.wasm": "ImcApp.wasm",
+      "ImcApp.psqddliy05.pdb": "ImcApp.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.l4ptthxatg.js": "sha256-ddUN4+taa/Qv7Mr8mLpunJO+0Xw3ViOqBvedhe57/hA="
@@ -414,10 +414,10 @@
       "WindowsBase.ahs9krftg4.wasm": "sha256-bgi2FHdT0ABsUP1yKQQ2AP8qfo1V/bS/4cJFE4OUHX8=",
       "mscorlib.k5iaovx9v7.wasm": "sha256-mEFLDERlY1HMNQHzh68xOPawXvI48O1fHW9PbfXugb4=",
       "netstandard.6sr1qvn64m.wasm": "sha256-Gpf+qEqCYaCB6zqI5sNPIurnfpwRtfcWksgf3CW6mHE=",
-      "ImcApp.gzaquohc8m.wasm": "sha256-HAiuc0m8qoZoxSAhoaPKLnBdJgTiLGM4ouVUnnJb2yA="
+      "ImcApp.u3gfqfjwp1.wasm": "sha256-ttrX80BxIeqO+OhYxCtFEp0h6Rj+9BS9y5oizpjIHYM="
     },
     "pdb": {
-      "ImcApp.inj0franir.pdb": "sha256-fn68E+3Vd+skLFHauIo/o4dzd3+fNlKKWoZ8YhAX1D0="
+      "ImcApp.psqddliy05.pdb": "sha256-F/bxM5b/zjPH00TFkyygcdg3deoKaUkUpzPp+4Kng+Q="
     }
   },
   "cacheBootResources": true,
