@@ -1,0 +1,30 @@
+.form-input[b-6n70qjs0zv] {
+    background-color: #F6F6F6;
+    color: #BDBDBD;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    min-width: 320px;
+}
+
+.form-select[b-6n70qjs0zv] {
+    background-color: #F6F6F6;
+    color: #BDBDBD;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    min-width: 355px;  
+}
+
+.form-checkbox[b-6n70qjs0zv] {
+    background-color: #F6F6F6;
+}
+
+.form-input-invalid[b-6n70qjs0zv] {
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: left;
+}

@@ -1,0 +1,76 @@
+﻿@inject Blazored.LocalStorage.ILocalStorageService LocalStorageService
+
+<EditForm Model="@_model" OnvalidSubmit="@OnvalidSubmitAsysnc">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+    
+    <div class="mb">
+        <InputNumber
+            @bind-Value="_model.Height"
+            class="form-input"
+            type="number"
+            step="0.01" 
+            placeholder="Height"/>
+       
+    </div>
+    
+    <div class="mb">
+        <InputNumber
+            @bind-Value="_model.Weight"
+            class="form-input"
+            type="number"
+            step="0.1" 
+            placeholder="Weight"/>
+       
+    </div>
+    
+    <div class="flex flex-center">
+        <button type="submit" class="btn btn-filled btn-auto mb">
+            Calculate your IMC
+        </button>
+        <a class="btn btn-link" href="#about">
+            Understand your result
+        </a>
+    </div>
+    
+</EditForm>
+
+<Dialog @ref="_dialog" OnModalCloseCallBack="@OnModalClose">
+    @if (_model.Imc < 18.6)
+    {
+        <h1>Underweight⚠️</h1>
+        <p>You are underweight, follow your nutritionist's recommendations to get there.</p>
+    }
+    else if (_model.Imc >= 18.6 && _model.Imc <= 24.9)
+    {
+        <h1>Ideal weight ✅</h1>
+        <p>Congratulations! You are within your ideal weight range, keep it up.</p>
+    }
+    else if (_model.Imc >= 24.9)
+    {
+        <h1>Overweight 🔴</h1>
+        <p>You are overweight, follow your nutritionist's recommendations to get there.</p>
+    }
+</Dialog>
+
+@code
+{
+    private Dialog _dialog = null!;
+    
+    private ImacModel _model = new();
+
+    public async Task OnvalidSubmitAsysnc()
+    {
+        await ShowModalAsysnc();
+    }
+
+    private Task ShowModalAsysnc() => _dialog.ShowModalAsysnc();
+
+    private async Task OnModalClose()
+    {
+        AppState.History.Add(_model);
+        await LocalStorageService.SetItemAsync("data", AppState.History);
+        AppState.NotifyChanged(_model, null);
+        _model = new();
+    }
+}

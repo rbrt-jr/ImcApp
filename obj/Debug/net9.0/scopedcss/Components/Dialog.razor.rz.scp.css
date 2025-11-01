@@ -1,0 +1,54 @@
+dialog[b-68dw46pmq8] {
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    animation: opacity-b-68dw46pmq8 1s;
+}
+
+.dialog-content[b-68dw46pmq8] {
+    border-radius: 16px;
+    width: 90%;
+    height: 320px;
+    background-color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+    padding: 60px 16px 16px 16px;
+}
+
+.dialog-content p[b-68dw46pmq8] {
+    font-size: 18px;
+}
+
+.dialog-buttons[b-68dw46pmq8] {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-icon[b-68dw46pmq8] {
+    padding: 16px;
+    background-color: #FFFFFF;
+    border: 8px solid #45FEFE;
+    border-radius: 32px;
+    width: 95px;
+    height: 95px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+}
+
+[b-68dw46pmq8]::backdrop {
+    background-color: #2E1462;
+    animation: opacity-b-68dw46pmq8 .5s;
+}
+
+@keyframes opacity-b-68dw46pmq8 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
